@@ -2,6 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- https://mavenlibs.com/maven/dependency/org.apache.skywalking/server-starter -->
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
@@ -15,6 +16,12 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>org.apache.skywalking</groupId>
+            <artifactId>server-starter</artifactId>
+            <version>9.2.0</version>
+        </dependency>
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
