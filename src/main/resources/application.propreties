@@ -1,3 +1,0 @@
-db-url="jdbc:postgresql://java-angular.cwfmt6u6yvg4.us-east-2.rds.amazonaws.com:5432/postgres?Schema=public";
-db-username="postgres";
-db-password="Cold2day!";

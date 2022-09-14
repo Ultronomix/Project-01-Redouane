@@ -1,17 +1,52 @@
-import org.postgresql.core.ConnectionFactory;
+import auth.AuthService;
+import auth.AuthServlet;
 
-import java.sql.DriverManager;
-import java.sql.SQLException;
-import java.sql.Connection;
+
+
+
+import org.apache.catalina.LifecycleException;
+import org.apache.catalina.startup.Tomcat;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import users.UserDAO;
+import users.UserService;
+import users.UserServlet;
+
+import javax.servlet.Servlet;
 
 
 public class App {
+    public static void main(String[] args) throws LifecycleException {
 
-    public static void main(String[] args) {
+            String docBase = System.getProperty("java.io.tmpdir");
+            Tomcat webServer =new Tomcat();
+            webServer.setBaseDir(docBase);
+            webServer.setPort(5000);
+            webServer.getConnector();
+
+            UserDAO userDAO = new UserDAO();
+            ObjectMapper objectMapper = new ObjectMapper();
+            objectMapper.registerModule(new JavaTimeModule());
+
+            AuthService authService =new AuthService(userDAO);
+            UserService userService =new UserService(userDAO);
+
+            UserServlet userServlet = new UserServlet(userService, objectMapper);
+            AuthServlet authServlet = new AuthServlet(authService, objectMapper);
+
+            String rootContext = "/project1";
+
+            webServer.addContext(rootContext, docBase);
+
+            webServer.addServlet(rootContext, "UserServlet", userServlet).addMapping("/users");
+
+            webServer.addServlet(rootContext, "AuthServlet", authServlet).addMapping("/auth");
+
+            webServer.start();
+            webServer.getServer().await();
 
 
     }
 
-
 }
-
