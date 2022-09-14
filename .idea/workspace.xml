@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="937edff7-9356-43a1-89b9-8f2d1345f105" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/auth/Credentials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/Error.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/common/ResponseString.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/common/util/SecurityUtils.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/AuthenticationException.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/DataSourceException.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/InvalidRequestException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/exceptions/UserAlreadyExist.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/users/UpdateRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/users/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
@@ -17,13 +25,13 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/auth/AuthServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/auth/AuthServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/data_source/ConnectionFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/data_source/ConnectionFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/users/NewUserRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/NewUserRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/users/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/users/Role.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/users/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/UserDAO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/users/UserResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/UserResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/users/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/users/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.propreties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.propreties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +119,7 @@
       <workItem from="1662586540150" duration="5739000" />
       <workItem from="1662604382331" duration="11423000" />
       <workItem from="1663020628850" duration="1379000" />
-      <workItem from="1663055319042" duration="25203000" />
+      <workItem from="1663055319042" duration="25805000" />
     </task>
     <servers />
   </component>
